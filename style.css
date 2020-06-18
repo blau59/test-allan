@@ -1,0 +1,237 @@
+body{
+    background-color: black;
+    font-family:arial;
+}
+
+#main{
+	display: flex;
+	margin: auto;
+	width: 80%;
+}
+
+/*Partie gauche du CV */
+#conteneurgauche{
+    background-color: #FFCE33;
+	width: 17.5%;
+}
+
+/*Photo*/
+.photo{
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	margin-left: 2rem; 
+	border-radius: 50%;
+    width: 200px;
+}
+
+/*Contact*/
+.contact{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: 464646;
+	height:40px;
+	color: #FFCE33; 
+}
+
+/*A propos de moi*/
+.moi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: 464646;
+	margin-top: 2rem;
+	height:40px;
+	color: #FFCE33; 
+}
+
+#conteneurloisir{
+    display: flex;
+    justify-content: space-around;
+    background-color: red;
+}
+
+
+/*Loisir*/
+.loisir{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: 464646;
+	margin-top: 27rem;
+	height:40px;
+	color:#FFCE33; 
+}
+
+/*Partie droite du CV*/
+#conteneurdroite{
+    background-color: white;
+	width: 48%;
+}
+
+/*Titre*/
+h1{
+	font-weight: normal;
+	margin-left: 3rem;
+	font-size: 50px
+}
+.soustitre{
+	font-size: 19px;
+
+}
+#prenom{
+	color:#FFCE33;
+}
+.t1{
+   font-size: 50px;
+   margin-left: 1em;
+   margin-top: 2em;
+   height:13px;
+}
+.t2{
+   font-weight: normal;
+   margin-left: 2em;
+   margin-bottom: 8rem;
+}
+#header-h2-span{
+    border-bottom: 2px #FFCE33 solid;
+}
+
+/*Formation*/
+.formations{
+    height:40px;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	border-bottom: 2px #FFCE33 solid;
+}
+#conteneur1{
+   flex-direction: row;
+   display: flex;
+}
+
+
+#conteurtext{
+	display: flex;
+	flex-direction: column;
+}
+
+#conteneurdate{
+	display: flex;
+	flex-direction: column;
+	width: 850px;
+}
+
+.date{
+    margin-top: 0.7rem;	
+	margin-left: 3rem;
+    height: 150px;
+    font-size: 14px;  
+}
+.text{
+	font-size: 14px;
+    margin-right: 3em; 
+}
+
+/*Experiences professionnelle*/
+.experiences{
+	height:40px;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	border-bottom: 2px #FFCE33 solid;
+}
+#conteneur2{
+	display: flex;
+    flex-shrink: 1;
+	margin-left: 1em;
+}
+.partie3{
+	width: 50%;
+	font-size: 14px;
+	margin-left: 3.5em;
+}	
+.partie4{
+	height:33px;
+	width: 50%;
+	font-size: 14px;
+	margin-left: 3em;
+}
+
+/*Recommandations*/
+.recommandations{
+    height:40px;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	border-bottom: 2px #FFCE33 solid;
+}
+/*Conteneur 3 contient aussi la partie 3 et 4 */
+#conteneur3{
+	display: flex;
+	margin-bottom: 2rem;
+}
+
+/*Partie icone et texte du CV*/
+
+.icone{
+   color: #FFCE33; 
+}
+.icones{
+   color: #FFCE33; 
+    font-size: 1em;
+}
+.iconemain{
+   color: #FFCE33;
+   font-size: 1.3em;
+}
+.iconeloisir{
+   font-size: 2.6em;
+   color: 464646;
+}
+p{
+	font-size: 14px;
+	margin-left: 3em;
+    margin-right: 3em;
+}
+li{
+   list-style-type: none;
+}
+
+/*Responsive*/
+@media  (max-width: 800px){
+	#conteneurdroite{
+	width: 80%;
+	}
+	#main{
+	display: flex;
+	margin: auto;
+	width: 100%;
+    }
+    .photo{
+    width: 100px;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem; 
+    margin-bottom: 0.5rem;
+    }
+    .loisir{
+    margin-top: 2rem;
+    }	
+   .moi{
+	height:60px;
+    }
+    .t1{
+    margin-top: 0.5em !important;
+    }
+    .t2{
+    margin-bottom: 3rem !important;
+    }
+    p{
+    margin-left: 0.7rem!important; 
+    margin-right: 0.7rem!important;
+    }
+    li{
+    margin-left: -1.9em;
+    margin-right: -2em;
+    }
+    #conteneurgauche{
+	width: 20%;
+    }
+}
